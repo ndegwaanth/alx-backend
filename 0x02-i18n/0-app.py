@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""0. Basic Flask app"""
+"""0-basic flask application"""
 from flask import Flask, render_template
 
 
@@ -8,10 +8,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    """This function render the index.html file"""
+    """render the index.html file to the browser"""
     return render_template('index.html')
 
 
-if __name__ == '__main__':
-    """This is the entry point of the application"""
+if __name__ == "__main__":
+    """main entry of the code"""
+
     app.run(debug=True)
