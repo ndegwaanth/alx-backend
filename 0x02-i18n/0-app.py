@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def show():
+    """This function render the index.html file"""
     return render_template('index.html')
 
 
